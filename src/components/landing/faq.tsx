@@ -22,7 +22,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
     <div className="border-b" style={{ borderColor: "var(--border)" }}>
       <button onClick={() => setOpen(!open)} className="w-full flex items-center justify-between py-5 text-left gap-4 group">
         <span className="text-sm font-medium group-hover:opacity-70 transition-opacity" style={{ color: "var(--text)" }}>{q}</span>
-        <Plus className="w-4 h-4 shrink-0 transition-transform duration-200" style={{ color: open ? "#0d0d0d" : "var(--muted)", transform: open ? "rotate(45deg)" : "rotate(0deg)" }} />
+        <Plus className="w-4 h-4 shrink-0 transition-transform duration-200" style={{ color: open ? "var(--text)" : "var(--muted)", transform: open ? "rotate(45deg)" : "rotate(0deg)" }} />
       </button>
       <AnimatePresence>
         {open && (
@@ -37,7 +37,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 
 export function FAQ() {
   return (
-    <section id="faq" className="border-t" style={{ borderColor: "var(--border)" }}>
+    <section id="faq" className="section-green border-t" style={{ borderColor: "var(--border)" }}>
       <div className="max-w-3xl mx-auto px-4 md:px-10 pt-14 md:pt-28 pb-10 md:pb-16">
         <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-60px" }} transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}>
           <p className="text-xs font-bold uppercase tracking-widest mb-3 text-center" style={{ color: "var(--muted)" }}>RÉPONSES</p>
@@ -46,11 +46,11 @@ export function FAQ() {
           </h2>
         </motion.div>
       </div>
-      <div className="h-px" style={{ background: "rgba(0,0,0,0.09)" }} />
+      <div className="h-px" style={{ background: "var(--border)" }} />
       <div className="max-w-3xl mx-auto px-4 md:px-10">
         {faqs.map((faq) => <FAQItem key={faq.q} {...faq} />)}
       </div>
-      <div className="h-px" style={{ background: "rgba(0,0,0,0.09)" }} />
+      <div className="h-px" style={{ background: "var(--border)" }} />
     </section>
   );
 }

@@ -22,7 +22,7 @@ const sectors = [
 
 export function LogoBar() {
   return (
-    <section className="py-10 border-y" style={{ borderColor: "var(--border)" }}>
+    <section className="section-green py-10 border-y" style={{ borderColor: "var(--border)" }}>
       <div className="max-w-6xl mx-auto px-10">
         {/* Stats row */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">

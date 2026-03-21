@@ -40,7 +40,7 @@ const steps = [
 
 export function Process() {
   return (
-    <section className="border-t" style={{ borderColor: "var(--border)" }}>
+    <section className="section-green border-t" style={{ borderColor: "var(--border)" }}>
       <div className="max-w-6xl mx-auto px-10 pt-28 pb-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -54,7 +54,7 @@ export function Process() {
           <h2 className="text-4xl md:text-5xl font-black tracking-tight" style={{ color: "var(--text)" }}>
             De l&apos;audit aux premiers
             <br />
-            <span style={{ color: "#c0c0c0" }}>clients en 4 étapes</span>
+            <span style={{ color: "var(--muted)" }}>clients en 4 étapes</span>
           </h2>
         </motion.div>
 

@@ -26,7 +26,7 @@ const values = [
 
 export function About() {
   return (
-    <section className="border-t" style={{ borderColor: "var(--border)", background: "var(--bg-card)" }}>
+    <section className="section-green border-t" style={{ borderColor: "var(--border)" }}>
       <div className="max-w-6xl mx-auto px-10 pt-28 pb-28">
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           {/* Left — text */}
@@ -42,7 +42,7 @@ export function About() {
             <h2 className="text-4xl md:text-5xl font-black tracking-tight leading-tight mb-6" style={{ color: "var(--text)" }}>
               On ne vend pas
               <br />
-              <span style={{ color: "#c0c0c0" }}>des services.</span>
+              <span style={{ color: "var(--muted)" }}>des services.</span>
             </h2>
             <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--muted)" }}>
               On délivre des résultats. Depuis 2022, Lattic accompagne des artisans, restaurateurs,

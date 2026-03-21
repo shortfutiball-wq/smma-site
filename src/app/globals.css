@@ -30,20 +30,40 @@
 }
 
 :root {
-  --bg: #f8f9fb;
-  --bg-card: #f0f2f5;
-  --bg-card2: #e8ebef;
-  --border: #dde1e7;
+  --bg: #FFFEFC;
+  --bg-card: #f2ede9;
+  --bg-card2: #e8e3df;
+  --border: #ddd8d4;
   --text: #0d0d0d;
   --muted: #737373;
   --lime: #7dd3fc;
   --lime-hover: #bae6fd;
 }
 
+.section-cream {
+  background: #FFFEFC;
+  --bg: #FFFEFC;
+  --bg-card: #f2ede9;
+  --bg-card2: #e8e3df;
+  --border: #ddd8d4;
+  --text: #0d0d0d;
+  --muted: #737373;
+}
+
+.section-green {
+  background: #3a5a40;
+  --bg: #3a5a40;
+  --bg-card: rgba(255,254,252,0.09);
+  --bg-card2: rgba(255,254,252,0.15);
+  --border: rgba(255,254,252,0.18);
+  --text: #FFFEFC;
+  --muted: rgba(255,254,252,0.55);
+}
+
 @layer base {
   * { box-sizing: border-box; }
   body {
-    background-color: var(--bg);
+    background-color: #FFFEFC;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23grain)' opacity='0.22'/%3E%3C/svg%3E");
     background-size: 400px 400px;
     filter: contrast(1.03) brightness(1.01);

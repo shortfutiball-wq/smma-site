@@ -22,7 +22,7 @@ const withUs = [
 
 export function Pricing() {
   return (
-    <section className="border-t" style={{ borderColor: "var(--border)", background: "var(--bg-card)" }}>
+    <section className="section-cream border-t" style={{ borderColor: "var(--border)" }}>
       <div className="max-w-6xl mx-auto px-10 pt-28 pb-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

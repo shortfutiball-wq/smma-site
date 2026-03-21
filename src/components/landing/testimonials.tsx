@@ -42,7 +42,7 @@ const CONTAINED_RULE = (
 
 export function Testimonials() {
   return (
-    <section className="border-t" style={{ borderColor: "var(--border)" }}>
+    <section className="section-cream border-t" style={{ borderColor: "var(--border)" }}>
       {/* Header */}
       <div className="max-w-6xl mx-auto px-10 pt-28 pb-16">
         <motion.div

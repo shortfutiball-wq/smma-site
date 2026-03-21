@@ -6,7 +6,7 @@ import { ArrowRight, MapPin, Star, TrendingUp, Zap, ShieldCheck } from "lucide-r
 
 export function Hero() {
   return (
-    <section className="pt-32 pb-24 px-10">
+    <section className="section-cream pt-32 pb-24 px-10">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           {/* Left */}

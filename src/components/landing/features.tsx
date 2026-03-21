@@ -15,7 +15,7 @@ const CONTAINED_RULE = <div className="max-w-6xl mx-auto"><div className="h-px" 
 
 export function Features() {
   return (
-    <section className="border-t" style={{ borderColor: "var(--border)", background: "var(--bg-card)" }}>
+    <section className="section-cream border-t" style={{ borderColor: "var(--border)" }}>
       <div className="max-w-6xl mx-auto px-4 md:px-10 pt-12 md:pt-20 pb-8 md:pb-12">
         <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-60px" }} transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}>
           <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--muted)" }}>PLUS VALUE</p>
