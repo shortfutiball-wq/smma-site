@@ -26,7 +26,7 @@ export function VideoSection() {
           className="text-center mb-16"
         >
           <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "rgba(255,255,255,0.35)" }}>Portfolio</p>
-          <h2 className="font-heading text-5xl md:text-7xl font-bold tracking-tight" style={{ color: "#ffffff" }}>Nos récentes collaborations</h2>
+          <h2 className="font-heading text-5xl md:text-7xl font-bold tracking-tight" style={{ color: "#FFFEFC" }}>Nos récentes collaborations</h2>
         </motion.div>
       </div>
 
@@ -60,7 +60,7 @@ export function VideoSection() {
                     borderRadius: 18,
                     boxShadow: "0 40px 100px rgba(0,0,0,0.85)",
                     border: "1px solid rgba(255,255,255,0.1)",
-                    background: "#fff",
+                    background: "#FFFEFC",
                   }}
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -74,7 +74,7 @@ export function VideoSection() {
                     background: "linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%)",
                     padding: "24px 20px 16px",
                   }}>
-                    <p style={{ color: "#fff", fontWeight: 700, fontSize: "1rem", margin: 0 }}>{cards[hovered].title}</p>
+                    <p style={{ color: "#FFFEFC", fontWeight: 700, fontSize: "1rem", margin: 0 }}>{cards[hovered].title}</p>
                     <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "0.8rem", margin: "4px 0 0" }}>{cards[hovered].desc}</p>
                   </div>
                 </motion.div>

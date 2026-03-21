@@ -1,44 +1,67 @@
 "use client";
 
-/* eslint-disable @next/next/no-img-element */
+import { motion } from "framer-motion";
 
-const IMG_FILTER = "brightness(0) invert(1) opacity(0.4)";
-
-const logos = [
-  { src: "/logo-figaro.svg",     alt: "Le Figaro",   h: 22 },
-  { src: "/logo-laprovence.png", alt: "La Provence", h: 22 },
-  { src: "/logo-parisien.svg",   alt: "Le Parisien", h: 26 },
-  { src: "/logo-lepoint.svg",    alt: "Le Point",    h: 26 },
+const stats = [
+  { value: "40+", label: "commerces accompagnés" },
+  { value: "94%", label: "de clients satisfaits" },
+  { value: "60 j", label: "pour les premiers résultats" },
+  { value: "0 €", label: "d'engagement minimum" },
 ];
 
-const items = [...logos, ...logos, ...logos];
+const sectors = [
+  "Plomberie & BTP",
+  "Restauration",
+  "Juridique",
+  "Architecture",
+  "Beauté & Bien-être",
+  "Auto & Mécanique",
+  "Santé & Médical",
+  "Comptabilité",
+];
 
 export function LogoBar() {
   return (
-    <div className="border-t border-b" style={{ background: "#111111", borderColor: "rgba(255,255,255,0.06)" }}>
-      <div className="max-w-6xl mx-auto overflow-hidden">
-        {/* ILS PARLENT DE NOUS | logos */}
-        <div className="h-12 flex items-stretch">
-          <div className="shrink-0 px-8 flex items-center border-r" style={{ borderColor: "rgba(255,255,255,0.08)" }}>
-            <span className="text-xs font-bold uppercase tracking-widest whitespace-nowrap" style={{ color: "rgba(255,255,255,0.35)" }}>
-              ILS PARLENT DE NOUS
-            </span>
-          </div>
-          <div className="flex-1 overflow-hidden flex items-center">
-            <div className="ticker-track flex items-center gap-16">
-              {items.map((logo, i) => (
-                <img
-                  key={i}
-                  src={logo.src}
-                  alt={logo.alt}
-                  height={logo.h}
-                  style={{ height: logo.h, width: "auto", display: "block", filter: IMG_FILTER, flexShrink: 0 }}
-                />
-              ))}
-            </div>
+    <section className="py-10 border-y" style={{ borderColor: "var(--border)" }}>
+      <div className="max-w-6xl mx-auto px-10">
+        {/* Stats row */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+          {stats.map((s, i) => (
+            <motion.div
+              key={s.label}
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.06 }}
+              className="text-center"
+            >
+              <p className="text-2xl font-black" style={{ color: "var(--text)" }}>{s.value}</p>
+              <p className="text-xs mt-0.5" style={{ color: "var(--muted)" }}>{s.label}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Divider */}
+        <div className="h-px mb-6" style={{ background: "var(--border)" }} />
+
+        {/* Sectors */}
+        <div>
+          <p className="text-center text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "var(--muted)" }}>
+            Secteurs que nous accompagnons
+          </p>
+          <div className="flex items-center justify-center gap-2 flex-wrap">
+            {sectors.map((s) => (
+              <span
+                key={s}
+                className="px-3 py-1 rounded-full text-xs font-medium"
+                style={{ background: "var(--bg-card)", color: "var(--muted)", border: "1px solid var(--border)" }}
+              >
+                {s}
+              </span>
+            ))}
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
