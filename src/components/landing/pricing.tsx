@@ -33,7 +33,7 @@ export function Pricing() {
           <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--muted)" }}>
             Pourquoi nous choisir
           </p>
-          <h2 className="text-4xl md:text-5xl font-black tracking-tight" style={{ color: "var(--text)" }}>
+          <h2 className="text-4xl md:text-5xl tracking-tight" style={{ color: "var(--text)" }}>
             La différence est
             <br />
             <span style={{ color: "#c0c0c0" }}>immédiatement visible</span>

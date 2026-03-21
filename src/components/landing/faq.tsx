@@ -41,7 +41,7 @@ export function FAQ() {
       <div className="max-w-3xl mx-auto px-4 md:px-10 pt-14 md:pt-28 pb-10 md:pb-16">
         <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-60px" }} transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}>
           <p className="text-xs font-bold uppercase tracking-widest mb-3 text-center" style={{ color: "var(--muted)" }}>RÉPONSES</p>
-          <h2 className="font-heading text-5xl md:text-7xl font-bold tracking-tight text-center" style={{ color: "var(--text)" }}>
+          <h2 className="text-5xl md:text-7xl tracking-tight text-center" style={{ color: "var(--text)" }}>
             Questions fréquentes
           </h2>
         </motion.div>

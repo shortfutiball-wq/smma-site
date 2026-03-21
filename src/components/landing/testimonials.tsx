@@ -54,7 +54,7 @@ export function Testimonials() {
           <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--muted)" }}>
             Témoignages clients
           </p>
-          <h2 className="text-4xl md:text-5xl font-black tracking-tight" style={{ color: "var(--text)" }}>
+          <h2 className="text-4xl md:text-5xl tracking-tight" style={{ color: "var(--text)" }}>
             Des résultats concrets,
             <br />
             <span style={{ color: "#c0c0c0" }}>pas des promesses</span>

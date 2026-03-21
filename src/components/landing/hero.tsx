@@ -26,7 +26,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.05 }}
-              className="text-6xl md:text-7xl font-black tracking-tight leading-[0.95] mb-6"
+              className="text-6xl md:text-7xl tracking-tight leading-[0.95] mb-6"
               style={{ color: "var(--text)" }}
             >
               Vos clients vous

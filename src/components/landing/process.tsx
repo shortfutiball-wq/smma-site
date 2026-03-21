@@ -51,7 +51,7 @@ export function Process() {
           <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--muted)" }}>
             Comment ça fonctionne
           </p>
-          <h2 className="text-4xl md:text-5xl font-black tracking-tight" style={{ color: "var(--text)" }}>
+          <h2 className="text-4xl md:text-5xl tracking-tight" style={{ color: "var(--text)" }}>
             De l&apos;audit aux premiers
             <br />
             <span style={{ color: "var(--muted)" }}>clients en 4 étapes</span>

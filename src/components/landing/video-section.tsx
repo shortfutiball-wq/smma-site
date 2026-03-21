@@ -26,7 +26,7 @@ export function VideoSection() {
           className="text-center mb-16"
         >
           <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "rgba(255,255,255,0.35)" }}>Portfolio</p>
-          <h2 className="font-heading text-5xl md:text-7xl font-bold tracking-tight" style={{ color: "#FFFEFC" }}>Nos récentes collaborations</h2>
+          <h2 className="text-5xl md:text-7xl tracking-tight" style={{ color: "#FFFEFC" }}>Nos récentes collaborations</h2>
         </motion.div>
       </div>
 

@@ -26,7 +26,7 @@ export function Work() {
             <span className="text-xs font-bold uppercase tracking-widest text-amber-500">
               Portfolio
             </span>
-            <h2 className="text-4xl md:text-5xl font-black tracking-tight mt-3">
+            <h2 className="text-4xl md:text-5xl tracking-tight mt-3">
               Selected work
             </h2>
           </div>

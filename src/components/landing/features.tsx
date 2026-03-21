@@ -19,7 +19,7 @@ export function Features() {
       <div className="max-w-6xl mx-auto px-4 md:px-10 pt-12 md:pt-20 pb-8 md:pb-12">
         <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-60px" }} transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}>
           <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--muted)" }}>PLUS VALUE</p>
-          <h2 className="font-heading text-4xl md:text-7xl font-bold tracking-tight leading-tight" style={{ color: "var(--text)" }}>Nos domaines d&apos;expertise</h2>
+          <h2 className="text-4xl md:text-7xl tracking-tight leading-tight" style={{ color: "var(--text)" }}>Nos domaines d&apos;expertise</h2>
         </motion.div>
       </div>
       {FULL_RULE}

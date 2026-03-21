@@ -40,7 +40,7 @@ export function CTAFooter() {
           <p className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "rgba(255,255,255,0.4)" }}>
             Audit gratuit · Aucun engagement
           </p>
-          <h2 className="text-5xl md:text-6xl font-black tracking-tight leading-tight mb-4 max-w-lg" style={{ color: "#FFFEFC" }}>
+          <h2 className="text-5xl md:text-6xl tracking-tight leading-tight mb-4 max-w-lg" style={{ color: "#FFFEFC" }}>
             Prêt à grandir ?
           </h2>
           <p className="text-sm mb-10 max-w-md leading-relaxed" style={{ color: "rgba(255,255,255,0.5)" }}>

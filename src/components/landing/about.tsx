@@ -39,7 +39,7 @@ export function About() {
             <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--muted)" }}>
               Notre mission
             </p>
-            <h2 className="text-4xl md:text-5xl font-black tracking-tight leading-tight mb-6" style={{ color: "var(--text)" }}>
+            <h2 className="text-4xl md:text-5xl tracking-tight leading-tight mb-6" style={{ color: "var(--text)" }}>
               On ne vend pas
               <br />
               <span style={{ color: "var(--muted)" }}>des services.</span>

@@ -44,7 +44,7 @@ export function Services() {
           <span className="text-xs font-bold uppercase tracking-widest text-amber-500">
             What we do
           </span>
-          <h2 className="text-4xl md:text-5xl font-black tracking-tight mt-3">
+          <h2 className="text-4xl md:text-5xl tracking-tight mt-3">
             Services
           </h2>
         </motion.div>
