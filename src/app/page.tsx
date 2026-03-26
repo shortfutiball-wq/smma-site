@@ -2,51 +2,9 @@ import { Navbar } from "@/components/landing/navbar";
 import { Hero } from "@/components/landing/hero";
 import { LogoBar } from "@/components/landing/logo-bar";
 import { Features } from "@/components/landing/features";
-import { Process } from "@/components/landing/process";
 import { Testimonials } from "@/components/landing/testimonials";
-import { About } from "@/components/landing/about";
 import { Pricing } from "@/components/landing/pricing";
-import { FAQ } from "@/components/landing/faq";
 import { CTAFooter } from "@/components/landing/cta-footer";
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "Combien de temps faut-il pour être premier sur Google ?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "En général, les premiers résultats significatifs apparaissent entre 4 et 8 semaines selon votre secteur et votre ville. Pour les villes moyennes, on atteint le top 3 sous 60 jours.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Est-ce que je suis engagé sur le long terme ?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Non. Aucun engagement minimum. Nous travaillons mois par mois avec nos clients. Notre modèle repose sur les résultats.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Est-ce que ça marche pour un petit commerce local ?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "C'est exactement pour ça qu'on est fait. Nos meilleurs résultats viennent de plombiers, restaurants, artisans, avocats et commerces de proximité.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Qu'est-ce qui est inclus dans l'offre de base ?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Site web haute conversion, optimisation SEO locale complète, fiche Google Business optimisée, et configuration de base de l'automatisation.",
-      },
-    },
-  ],
-};
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -79,10 +37,6 @@ export default function LandingPage() {
       {/* Structured data */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
 
@@ -95,11 +49,8 @@ export default function LandingPage() {
       <Hero />
       <LogoBar />
       <Features />
-      <Process />
       <Testimonials />
-      <About />
       <Pricing />
-      <FAQ />
       <CTAFooter />
     </main>
   );
